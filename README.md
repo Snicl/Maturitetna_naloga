@@ -21,7 +21,7 @@ S pomočjo PLK relejske enote (ali Arduino/STM32/ESP32) krmiliti temperaturo in 
 <br />
 
 ## Vezje
-
+![image](https://github.com/Snicl/Maturitetna_naloga/blob/main/Media/Vezje.jpg?raw=true)
 <br />
 
 ## IoT Aplikacija 
