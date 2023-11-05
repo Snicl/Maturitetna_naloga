@@ -13,3 +13,4 @@ S pomočjo PLK relejske enote (ali Arduino/STM32/ESP32) krmiliti temperaturo in 
 |Rdeča LED        |1            |
 |Bela LED         |1            |
 ## Shema
+![image](https://github.com/Snicl/Maturitetna_naloga/assets/123487347/d31b4c0c-3d3a-4f05-a889-2979f3a58f6c)
