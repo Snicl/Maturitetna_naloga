@@ -29,5 +29,5 @@ S pomočjo PLK relejske enote (ali Arduino/STM32/ESP32) krmiliti temperaturo in 
 <br />
 
 ## IoT Aplikacija 
-
+![image](https://github.com/Snicl/Maturitetna_naloga/blob/main/Media/IoT%20Aplikacija.png?raw=true)
 
