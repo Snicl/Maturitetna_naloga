@@ -4,4 +4,4 @@ S pomočjo PLK relejske enote (ali Arduino/STM32/ESP32) krmiliti temperaturo in 
 ## Kosovnica
 |Komponent    |Število kosov|
 |-------------|-------------|
-|ESP32 WROOM32|
+|ESP32 WROOM32|1            |
