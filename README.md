@@ -8,13 +8,14 @@ S pomočjo PLK relejske enote (ali Arduino/STM32/ESP32) krmiliti temperaturo in 
 |Komponent        |Število kosov|
 |-----------------|:-----------:|
 |ESP32 WROOM32    |1            |
-|DHT11            |1            |
+|BME280           |1            |
 |Push Button 4-Pin|4            |
 |SRD-05VDC-SL-C   |3            |
 |Zelena LED       |1            |
 |Modra LED        |1            |
 |Rdeča LED        |1            |
 |Bela LED         |1            |
+|OLED 1.3" I2C    |1            |
 
 <br />
 
