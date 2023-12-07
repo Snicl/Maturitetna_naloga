@@ -20,12 +20,12 @@ S pomočjo PLK relejske enote (ali Arduino/STM32/ESP32) krmiliti temperaturo in 
 <br />
 
 ## Shema
-![image](https://github.com/Snicl/Maturitetna_naloga/assets/123487347/d31b4c0c-3d3a-4f05-a889-2979f3a58f6c)
+![image]()
 
 <br />
 
 ## Vezje
-![image](https://github.com/Snicl/Maturitetna_naloga/blob/main/Media/Vezje.jpg?raw=true)
+![image]()
 
 <br />
 
