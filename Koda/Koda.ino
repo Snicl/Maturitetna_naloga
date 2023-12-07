@@ -18,6 +18,9 @@ char pass[] = "password";
 #include <Adafruit_GFX.h>
 #include <Adafruit_SH1106.h>
 
+unsigned long previousMillis = 0;
+const unsigned long interval = 50; // Time interval in milliseconds
+
 using namespace ace_button;
 Preferences pref;
 
@@ -28,7 +31,7 @@ Adafruit_BME280 bme;
 
 Adafruit_SH1106 display(21, 22);
 
-// Setpoint and setHumi values (in Celsius)
+// Setpoint and setHumi values (in degrees Celsius)
 float setTemp = 0;
 float setHumi = 0;
 float currentTemp = 0;
@@ -42,7 +45,7 @@ float currentHumi = 0;
 #define ButtonPin1 25  //D25
 #define ButtonPin2 26  //D26 
 #define ButtonPin3 27  //D27
-#define ButtonPin4 13  //D21
+#define ButtonPin4 13  //D12
 
 #define wifiLed   2   //D2
 
@@ -123,10 +126,10 @@ void checkBlynkStatus() { // called every 2 seconds by SimpleTimer
   bool isconnected = Blynk.connected();
   if (isconnected == false) {
     wifiFlag = 1;
-    Serial.println("Blynk Not Connected");
     display.setTextSize(1);
     display.setTextColor(WHITE);
-    display.setCursor(0, 2);
+    display.setCursor(2, 2);
+    display.println(" Blynk Not Connected ");
     digitalWrite(wifiLed, LOW);
   }
   if (isconnected == true) {
@@ -236,31 +239,36 @@ void sendSensor()
 
 }
 
-void getRelayState()
-{
-  //Serial.println("reading data from NVS");
-  modeState = pref.getBool("Mode", 0);
-  Blynk.virtualWrite(VPIN_Mode, modeState);
-  delay(100);
-  grelecState = pref.getBool("Grelec", 0);
-  digitalWrite(RelayPin1, !grelecState);
-  Blynk.virtualWrite(VPIN_Grelec, grelecState);
-  delay(100);
-  vlazilecState = pref.getBool("Vlazilec", 0);
-  digitalWrite(RelayPin2, !vlazilecState);
-  Blynk.virtualWrite(VPIN_Vlazilec, vlazilecState);
-  delay(100);
-  ventilatorState = pref.getBool("Ventilator", 0);
-  digitalWrite(RelayPin3, !ventilatorState);
-  Blynk.virtualWrite(VPIN_Ventilator, ventilatorState);
-  delay(100);
-  setTemp = pref.getBool("setemp", 0);
-  Blynk.virtualWrite(VPIN_setTemp, setTemp);
-  delay(100);
-  setHumi = pref.getBool("Vlaznost", 0);
-  Blynk.virtualWrite(VPIN_setHumi, setHumi);
-  delay(100);
+void getRelayState() {
+  unsigned long currentMillis = millis();
+
+  if (currentMillis - previousMillis >= interval) {
+    previousMillis = currentMillis;
+
+    //Serial.println("reading data from NVS");
+    modeState = pref.getBool("Mode", 0);
+    Blynk.virtualWrite(VPIN_Mode, modeState);
+
+    grelecState = pref.getBool("Grelec", 0);
+    digitalWrite(RelayPin1, !grelecState);
+    Blynk.virtualWrite(VPIN_Grelec, grelecState);
+
+    vlazilecState = pref.getBool("Vlazilec", 0);
+    digitalWrite(RelayPin2, !vlazilecState);
+    Blynk.virtualWrite(VPIN_Vlazilec, vlazilecState);
+
+    ventilatorState = pref.getBool("Ventilator", 0);
+    digitalWrite(RelayPin3, !ventilatorState);
+    Blynk.virtualWrite(VPIN_Ventilator, ventilatorState);
+
+    setTemp = pref.getBool("setemp", 0);
+    Blynk.virtualWrite(VPIN_setTemp, setTemp);
+
+    setHumi = pref.getBool("Vlaznost", 0);
+    Blynk.virtualWrite(VPIN_setHumi, setHumi);
+  }
 }
+
 
 
 void DisplayData()  {
