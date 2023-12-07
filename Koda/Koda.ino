@@ -28,7 +28,7 @@ Adafruit_BME280 bme;
 
 Adafruit_SH1106 display(21, 22);
 
-// Setpoint and setHumi values (in degrees Celsius)
+// Setpoint and setHumi values (in Celsius)
 float setTemp = 0;
 float setHumi = 0;
 float currentTemp = 0;
