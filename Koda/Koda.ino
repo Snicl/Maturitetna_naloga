@@ -4,8 +4,8 @@
 #define BLYNK_AUTH_TOKEN "iG3Jf_BBBFk-YKR7cKgqwrecjCrF5ILN"
 // Your WiFi credentials.
 // Set password to "" for open networks.
-char ssid[] = "hrinet";
-char pass[] = "alfainbeta";
+char ssid[] = "wifi";
+char pass[] = "password";
 
 #include <WiFi.h>
 #include <BlynkSimpleEsp32.h>
