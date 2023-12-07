@@ -23,7 +23,7 @@ Preferences pref;
 
 Adafruit_BME280 bme;
 
-#define OLED_SDA 12
+#define OLED_SDA 21
 #define OLED_SCL 22
 
 Adafruit_SH1106 display(21, 22);
