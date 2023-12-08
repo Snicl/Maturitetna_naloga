@@ -25,7 +25,7 @@ S pomočjo PLK relejske enote (ali Arduino/STM32/ESP32) krmiliti temperaturo in 
 <br />
 
 ## Vezje
-![image]()
+
 
 <br />
 
