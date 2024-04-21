@@ -5,18 +5,22 @@ S pomočjo PLK relejske enote (ali Arduino/STM32/ESP32) krmiliti temperaturo in 
 <br />
 
 ## Kosovnica
-|Komponent        |Število kosov|Cena 1 kos|Skupna cena|
-|-----------------|:-----------:|:-----------:|:-----------:|
-|ESP32 WROOM32    |1            |19 €       |19 € |
-|BME280           |1            |12,30 € |12,30 € |
-|Push Button 4-Pin|4            |    0,10 €   | 0,40 €|
-|SRD-05VDC-SL-C   |3            |  3,30 €        |9,90 €|
-|Zelena LED       |1            |     0,22 €     |  0,22 €  |
-|Modra LED        |1            |     0,22 €     |  0,22 €  |
-|Rdeča LED        |1            |     0,22 €     |  0,22 €  |
-|Bela LED         |1            |     0,22 €     |  0,22 €  |
-|OLED 1.3" I2C    |1            |     9 €      | 9 €|
-
+|Komponent              |Število kosov|Cena 1 kos   |Skupna cena  |
+|-----------------------|:-----------:|:-----------:|:-----------:|
+|ESP32 WROOM32          |1            |19 €         |19 €         |
+|BME280                 |1            |12 €         |12 €         |
+|Tipkalo B-13           |4            |2,4 €        |9,6 €        |
+|Modul SRD-05VDC-SL-C   |1            |6 €          |6 €          |
+|Modul SRD-05VDC-SL-C   |1            |8 €          |8 €          |
+|Zelena LED             |1            |0,22 €       |0,22 €       |
+|Modra LED              |1            |0,22 €       |0,22 €       |
+|Rdeča LED              |1            |0,22 €       |0,22 €       |
+|Bela LED               |1            |0,22 €       |0,22 €       |
+|OLED 1.3" I2C          |1            |9 €          |9 €          |
+|SHRACK OHIŠJE          |1            |20 €         |20 €         |
+|ISKRA kontaktor        |1            |24,20 €      |24,20 €      |
+|Kabli, žičke, ostalo   |1            |8 €          |8 €          |
+                                                    |116,68  €    |
 <br />
 
 ## Shema
