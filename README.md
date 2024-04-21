@@ -24,7 +24,8 @@ S pomočjo PLK relejske enote (ali Arduino/STM32/ESP32) krmiliti temperaturo in 
 <br />
 
 ## Shema
-![image]()
+![image](https://github.com/Snicl/Maturitetna_naloga/assets/123487347/95098d69-7481-4160-be94-795675b40bca)
+
 
 <br />
 
@@ -34,5 +35,5 @@ S pomočjo PLK relejske enote (ali Arduino/STM32/ESP32) krmiliti temperaturo in 
 <br />
 
 ## IoT Aplikacija 
-![image](https://github.com/Snicl/Maturitetna_naloga/blob/main/Media/IoT%20Aplikacija.png?raw=true)
+
 
