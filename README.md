@@ -20,7 +20,7 @@ S pomočjo PLK relejske enote (ali Arduino/STM32/ESP32) krmiliti temperaturo in 
 |SHRACK OHIŠJE          |1            |20 €         |20 €         |
 |ISKRA kontaktor        |1            |24,20 €      |24,20 €      |
 |Kabli, žičke, ostalo   |1            |8 €          |8 €          |
-|Končna cena            |      /      |      /      |116,68  €    |
+|**Končna cena**        |      /      |      /      |**116,68  €**|
                                     
 <br />
 
