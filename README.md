@@ -21,7 +21,7 @@ S pomočjo PLK relejske enote (ali Arduino/STM32/ESP32) krmiliti temperaturo in 
 |ISKRA kontaktor        |1            |24,20 €      |24,20 €      |
 |Kabli, žičke, ostalo   |1            |8 €          |8 €          |
 |Končna cena            |      /      |      /      |116,68  €    |
- -----------                                        
+                                    
 <br />
 
 ## Shema
